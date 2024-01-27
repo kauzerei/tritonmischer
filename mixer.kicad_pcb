@@ -4229,8 +4229,8 @@
 
   (gr_rect (start 105.46 46.25) (end 116.89 128.8)
     (stroke (width 0.5) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 0b05afe4-4b40-46f8-a254-25e98afc083c))
-  (gr_rect (start 31.445953 27.305) (end 55.575953 146.685)
-    (stroke (width 0.2) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 13c4dfab-899a-40a1-ad28-f00540f2c4f3))
+  (gr_rect (start 30.53 27.2) (end 55.93 146.58)
+    (stroke (width 0.5) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 13c4dfab-899a-40a1-ad28-f00540f2c4f3))
   (gr_circle (center 109.27 107.21) (end 110.54 107.21)
     (stroke (width 0.5) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 147539e2-7285-413e-bf88-65477d9fe478))
   (gr_circle (center 113.08 60.22) (end 114.35 60.22)
