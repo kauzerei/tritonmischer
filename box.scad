@@ -2,21 +2,21 @@ bissl=1/100;
 $fa=1/1;
 $fs=0.5;
 peg_h=5;
-peg_id=4;
+peg_id=3.5;
 peg_od=2*peg_id;
 thickness=2;
 connection=2;
-width=89;
+width=100;
 depth=119;
 height=peg_h+32;
 air=0.5;
-wall=2;
-floor=1.2;
-power_pos=[0,2,0];
-input_pos=[[0,47.72,0],[0,47.72+26.67,0],[0,47.72+2*26.67,0]];
-output_holes=[[21.59,0,peg_h+24],[21.59+29.21,0,peg_h+24],[21.59+2*29.21,0,peg_h+24]];
-cover_pegs=[[8,96],[8,32],[64,96],[64,32]];
-potis=[for (x=[21.59-10,21.59-10+29.21,21.59-10+2*29.21]) for (y=[47.72+7.62+1,47.72+7.62+1+26.67,47.72+7.62+1+26.67*2]) [x,y]];
+wall=1.6;
+floor=1.5;
+power_pos=[1,2+2*26.67+50.8,0];
+input_pos=[[1,2,0],[1,2+26.67,0],[1,2+2*26.67,0]];
+output_holes=[[21.59,120,peg_h+24],[21.59+29.21,120,peg_h+24],[21.59+2*29.21,120,peg_h+24]];
+cover_pegs=[for (x=[8,92]) for (y=[22,96]) [x,y]];
+potis=[for (x=[10+21.59+0*29.21,10+21.59+1*29.21,10+21.59+2*29.21]) for (y=[1+7.62+0*26.67,1+7.62+1*26.67,1+7.62+2*26.67]) [x,y]];
 module box() {
 difference() {
   translate([-wall, -wall, -floor]) cube([width+2*wall, depth+2*wall, height+floor]);
@@ -65,5 +65,6 @@ translate ([0,0,-2*bissl]) for (tr=cover_pegs) translate(tr) cylinder(h=thicknes
 translate ([0,0,-2*bissl]) for (tr=potis) translate(tr) cylinder (h=thickness+3*bissl,d=8);
 }
 }
-cover();
+//translate([0,0,40]) cover();
+rotate([180,0,0])cover();
 //box();
