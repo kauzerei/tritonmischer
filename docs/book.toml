@@ -1,0 +1,30 @@
+# ----------------------------------------------------------------------------
+# Copyright (c) 2023 - 2024 Thomas Buck (thomas@xythobuz.de)
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# See <http://www.gnu.org/licenses/>.
+# ----------------------------------------------------------------------------
+
+[book]
+title = "Tritonmixer"
+authors = ["Kauzerei", "xythobuz"]
+description = "Documentation for Tritonmischer, a 3x3 matrix audio mixer."
+language = "en"
+multilingual = false
+src = "src"
+
+[output.html]
+default-theme = "rust"
+preferred-dark-theme = "ayu"
+git-repository-url = "https://github.com/kauzerei/tritonmischer"
+edit-url-template = "https://github.com/kauzerei/tritonmischer/edit/main/docs/{path}"
+site-url = "/tritonmischer/"

@@ -2,7 +2,7 @@ bissl=1/100;
 $fa=1/1;
 $fs=1/2;
 
-part="box";//[box, lid, visualization]
+part="box";//[box, lid, OPT_visualization]
 
 //standoffs for screws
 peg_h=5;

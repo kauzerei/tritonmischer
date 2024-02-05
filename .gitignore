@@ -1,4 +1,15 @@
 .DS_Store
+.directory
+
+case/stl
+
+docs/book
+docs/src/plot
+docs/src/inc_*.md
+
+pcb/fabrication
+pcb/plot
+pcb/fab.zip
 
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
